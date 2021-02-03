@@ -1,17 +1,21 @@
-<html>
+<html ut>
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>David Bourgault</title>
 		<link rel="stylesheet" href="assets/main.css">
 	</head>
+
 	<body>
 		<div id="app" :class=lang>
 			<div id=nav>
 				<span class="lang-button" ><span v-on:click="setlang('en')" class="en">EN</span>/<span v-on:click="setlang('fr')" class="fr">FR</span></span>
 			</div>
+
 			<div id="hero">
 				<span id="title">David Bourgault</span>
 				<span id="subtitle">{{ loc.hero.subtitle[lang] }}</span>
 			</div>
+
 			<div id="main">
 				<div id="cv" class="content">
 					<div v-for="section in loc.cv.sections" class="cv-section">
@@ -24,6 +28,7 @@
 									<span class="cv-item-date-title">{{ date.title[lang] }}</span><br/>
 								</div>
 							</div>
+
 							<div class="cv-item-info">
 								<div class="cv-item-header">
 									<span>{{ item.title[lang] }}</span>
@@ -39,6 +44,7 @@
 								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
