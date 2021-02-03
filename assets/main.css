@@ -1,0 +1,126 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;900&family=Source+Code+Pro&display=swap');
+
+/* Style */
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+div#nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+
+    position: absolute;
+    height: 2em;
+    width: 100%;
+
+    color: white;
+}
+
+span.lang-button {
+    font-family: 'Source Code Pro', monospace;
+}
+
+div#app.en .lang-button .en {
+    font-weight: bolder;
+}
+
+div#app.fr .lang-button .fr {
+    font-weight: bolder;
+}
+
+div#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 66vh;
+
+    background-color: #303030;
+}
+
+span#title, span#subtitle {
+    text-transform: uppercase;
+    color: #ffffff
+}
+
+span#title {
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+span#subtitle {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+div#main {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+div.content {
+    margin: auto;
+    max-width: 800px;
+}
+
+div.cv-item, div.cv-item-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.cv-item {
+    margin-top: 2em;
+}
+
+div.cv-item-date > div {
+    margin-bottom: 0.25em;
+}
+
+div.cv-item-date {
+    width: 20%;
+}
+
+div.cv-item-info {
+    width: 80%;
+}
+
+span.cv-section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+div.cv-item-header span {
+    font-weight: 600;
+}
+
+span.cv-item-date-title {
+    font-style: italic;
+}
+
+div.cv-item-body ul {
+    margin: 0.25em;
+    padding-left: 1em;
+}
+
+div.cv-item-body li {
+    list-style: square;
+    margin-bottom: 0.25em;
+}
+
+span.cv-item-tool {
+    font-family: 'Source Code Pro', monospace;
+}
+
+span.cv-item-tool:not(:last-child)::after {
+    font-family: 'Source Code Pro', monospace;
+    content: " / ";
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}

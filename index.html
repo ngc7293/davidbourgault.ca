@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>David Bourgault</title>
+		<link rel="stylesheet" href="assets/main.css">
+	</head>
+	<body>
+		<div id="app" :class=lang>
+			<div id=nav>
+				<span class="lang-button" ><span v-on:click="setlang('en')" class="en">EN</span>/<span v-on:click="setlang('fr')" class="fr">FR</span></span>
+			</div>
+			<div id="hero">
+				<span id="title">David Bourgault</span>
+				<span id="subtitle">{{ loc.hero.subtitle[lang] }}</span>
+			</div>
+			<div id="main">
+				<div id="cv" class="content">
+					<div v-for="section in loc.cv.sections" class="cv-section">
+						<span class="cv-section-title">{{ section.title[lang] }}</span>
+
+						<div v-for="item in section.items" class="cv-item">
+							<div class="cv-item-date">
+								<div v-for="date in item.dates">
+									<span class="cv-item-date-range">{{ date.start }} - {{ date.end }}</span><br/>
+									<span class="cv-item-date-title">{{ date.title[lang] }}</span><br/>
+								</div>
+							</div>
+							<div class="cv-item-info">
+								<div class="cv-item-header">
+									<span>{{ item.title[lang] }}</span>
+									<span><a :href="item.org.link[lang]">{{ item.org.name }}</a></span>
+								</div>
+								<div class="cv-item-body">
+									<ul>
+										<li v-for="task in item.tasks">{{ task[lang] }}</li>
+									</ul>
+								</div>
+								<div v-if="item.tools">
+									<span v-for="tool in item.tools" class="cv-item-tool">{{ tool }}</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script src="assets/main.js"></script>
+</html>
