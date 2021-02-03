@@ -7,19 +7,30 @@
 
 	<body>
 		<div id="app" :class=lang>
-			<div id=nav>
-				<span class="lang-button" ><span v-on:click="setlang('en')" class="en">EN</span>/<span v-on:click="setlang('fr')" class="fr">FR</span></span>
-			</div>
-
+			
 			<div id="hero">
+				<div id="nav">
+					<div id="nav-language">
+						<span class="lang-button"><span v-on:click="setlang('en')" class="en">English</span> / <span v-on:click="setlang('fr')" class="fr">Français</span></span>
+					</div>
+				</div>
+
 				<span id="title">David Bourgault</span>
 				<span id="subtitle">{{ loc.hero.subtitle[lang] }}</span>
+
+				<div id="contact">
+					<span>
+						<span><a href="mailto:contact@davidbourgault.ca">contact@davidbourgault.ca</a></span> / <span><a href="https://www.linkedin.com/in/davidbourgault/">linkedin.com/in/davidbourgault</a></span>
+					</span>
+				</div>
 			</div>
 
 			<div id="main">
 				<div id="cv" class="content">
 					<div v-for="section in loc.cv.sections" class="cv-section">
-						<span class="cv-section-title">{{ section.title[lang] }}</span>
+						<div class="cv-section-title">
+							<span>{{ section.title[lang] }}</span>
+						</div>
 
 						<div v-for="item in section.items" class="cv-item">
 							<div class="cv-item-date">

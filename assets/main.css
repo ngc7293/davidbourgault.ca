@@ -14,25 +14,34 @@ div#nav {
     justify-content: end;
 
     position: absolute;
+    top: 0;
+    left: 0;
+
     height: 2em;
     width: 100%;
 
     color: white;
-}
-
-span.lang-button {
     font-family: 'Source Code Pro', monospace;
 }
 
+div#nav-language {
+    margin-right: 1em;
+}
+
+span.lang-button:hover {
+    cursor: pointer;
+}
+
 div#app.en .lang-button .en {
-    font-weight: bolder;
+    text-decoration: underline;
 }
 
 div#app.fr .lang-button .fr {
-    font-weight: bolder;
+    text-decoration: underline
 }
 
 div#hero {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,6 +51,28 @@ div#hero {
     height: 66vh;
 
     background-color: #303030;
+}
+
+div#contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+
+    height: 2em;
+    width: 100%;
+
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+div#contact a {
+    /* text-decoration: none; */
+    color: white;
 }
 
 span#title, span#subtitle {
@@ -75,12 +106,14 @@ div.cv-item, div.cv-item-header {
     justify-content: space-between;
 }
 
-div.cv-item {
-    margin-top: 2em;
+div.cv-section-title {
+    margin-bottom: 0.5em;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-div.cv-item-date > div {
-    margin-bottom: 0.25em;
+div.cv-item {
+    margin-bottom: 2em;
 }
 
 div.cv-item-date {
@@ -91,13 +124,17 @@ div.cv-item-info {
     width: 80%;
 }
 
-span.cv-section-title {
-    font-size: 1.5rem;
-    font-weight: 600;
+div.cv-item-date > div {
+    margin-bottom: 0.25em;
 }
 
 div.cv-item-header span {
     font-weight: 600;
+}
+
+div.cv-item-header a {
+    text-decoration: none;
+    color: black;
 }
 
 span.cv-item-date-title {
