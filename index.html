@@ -6,8 +6,10 @@
 	</head>
 
 	<body>
+		<video id="hero-vid" autoplay loop muted>
+			<source type="video/webm" src="assets/media/gits.webm" />
+		</video>
 		<div id="app" :class=lang>
-			
 			<div id="hero">
 				<div id="nav">
 					<div id="nav-language">
@@ -35,8 +37,8 @@
 						<div v-for="item in section.items" class="cv-item">
 							<div class="cv-item-date">
 								<div v-for="date in item.dates">
-									<span class="cv-item-date-range">{{ date.start }} - {{ date.end }}</span><br/>
-									<span class="cv-item-date-title">{{ date.title[lang] }}</span><br/>
+									<span class="cv-item-date-range">{{ date.start }} - {{ date.end }}<br /></span>
+									<span v-if="date.title[lang]" class="cv-item-date-title">{{ date.title[lang] }}<br /></span>
 								</div>
 							</div>
 
@@ -50,7 +52,7 @@
 										<li v-for="task in item.tasks">{{ task[lang] }}</li>
 									</ul>
 								</div>
-								<div v-if="item.tools">
+								<div>
 									<span v-for="tool in item.tools" class="cv-item-tool">{{ tool }}</span>
 								</div>
 							</div>

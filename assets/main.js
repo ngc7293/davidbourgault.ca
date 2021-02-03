@@ -27,7 +27,7 @@ var locale = {
                         },
                         tasks: [
                             { fr: 'Contribuer à un serveur web haute-performance', en: 'Contribute to a high-performance web server in C++'},
-                            { fr: 'Concevoir des nouvelles architecturers et composantes', en: 'Design new software components and architectures'},
+                            { fr: 'Concevoir de nouvelles architectures et composantes', en: 'Design new software components and architectures'},
                             { fr: 'Développer des applications de bureau avec Qt', en: 'Develop Qt-based desktop applications'},
                             { fr: 'Contribuer à une infrastructure de tests automatisés', en: 'Contribute to an automated testing framework'},
                             { fr: 'Investiger et corriger les bogues', en: 'Investigate and resolve bugs and client issues'}
