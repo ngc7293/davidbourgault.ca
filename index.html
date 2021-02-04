@@ -57,7 +57,10 @@
 								</div>
 							</div>
 						</div>
-
+					</div>
+					
+					<div class="cv-links flex mono">
+						<a :href="loc.cv.pdf.link[lang]">{{ loc.cv.pdf.text[lang] }}</a>
 					</div>
 				</div>
 			</div>
@@ -66,4 +69,5 @@
 	
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 	<script src="assets/main.min.js"></script>
+	<script>console.log(locale)</script>
 </html>

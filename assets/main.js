@@ -152,6 +152,11 @@ var locale = {
                                 start: '2019/07',
                                 end: '2020/01',
                                 title: { fr: 'Project Manager', en: 'Project Manager' }
+                            },
+                            {
+                                start: '2018/07',
+                                end: '2019/07',
+                                title: { fr: 'Lead Avionique', en: 'Avionics Lead' }
                             }
                         ],
                         title: { fr: 'RockÉTS — Fusées haute puissance', en: 'RockÉTS — High Powered Rockets' },
@@ -171,7 +176,11 @@ var locale = {
                     },
                 ]
             }
-        ]
+        ],
+        pdf: {
+            text: { fr: 'Téléchargez mon CV complet en PDF', en: 'Download my full CV in PDF'},
+            link: { fr: 'assets/media/davidbourgault.fr.pdf', en: 'assets/media/davidbourgault.en.pdf' }
+        }
     }
 }
 

@@ -166,3 +166,7 @@ span.cv-item-tool:not(:last-child)::after {
     content: " / ";
     padding: 0 0.25em;
 }
+
+div.cv-links a {
+    color: black;
+}
