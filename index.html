@@ -2,16 +2,16 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>David Bourgault</title>
-		<link rel="stylesheet" href="assets/main.css">
+		<link rel="stylesheet" href="assets/main.min.css">
 	</head>
 
 	<body>
-		<video id="hero-vid" autoplay loop muted>
+		<video id="hero-vid" playsinline autoplay loop muted>
 			<source type="video/webm" src="assets/media/gits.webm" />
 		</video>
 		<div id="app" :class=lang>
-			<div id="hero">
-				<div id="nav">
+			<div id="hero" class="flex">
+				<div id="nav" class="flex mono">
 					<div id="nav-language">
 						<span class="lang-button"><span v-on:click="setlang('en')" class="en">English</span> / <span v-on:click="setlang('fr')" class="fr">Français</span></span>
 					</div>
@@ -20,7 +20,7 @@
 				<span id="title">David Bourgault</span>
 				<span id="subtitle">{{ loc.hero.subtitle[lang] }}</span>
 
-				<div id="contact">
+				<div id="contact" class="flex mono">
 					<span>
 						<span><a href="mailto:contact@davidbourgault.ca">contact@davidbourgault.ca</a></span> / <span><a href="https://www.linkedin.com/in/davidbourgault/">linkedin.com/in/davidbourgault</a></span>
 					</span>
@@ -34,7 +34,7 @@
 							<span>{{ section.title[lang] }}</span>
 						</div>
 
-						<div v-for="item in section.items" class="cv-item">
+						<div v-for="item in section.items" class="cv-item flex">
 							<div class="cv-item-date">
 								<div v-for="date in item.dates">
 									<span class="cv-item-date-range">{{ date.start }} - {{ date.end }}<br /></span>
@@ -43,7 +43,7 @@
 							</div>
 
 							<div class="cv-item-info">
-								<div class="cv-item-header">
+								<div class="cv-item-header flex">
 									<span>{{ item.title[lang] }}</span>
 									<span><a :href="item.org.link[lang]">{{ item.org.name }}</a></span>
 								</div>
@@ -52,7 +52,7 @@
 										<li v-for="task in item.tasks">{{ task[lang] }}</li>
 									</ul>
 								</div>
-								<div>
+								<div class="mono">
 									<span v-for="tool in item.tools" class="cv-item-tool">{{ tool }}</span>
 								</div>
 							</div>
@@ -65,5 +65,5 @@
 	</body>
 	
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-	<script src="assets/main.js"></script>
+	<script src="assets/main.min.js"></script>
 </html>

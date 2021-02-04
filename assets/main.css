@@ -2,9 +2,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;900&family=Source+Code+Pro&display=swap');
 
 /* Style */
+html {
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+}
+
+div.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mono {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/************************************ Hero ************************************/
+div#hero {
+    position: relative;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 66vh;
+    
+    color: white;
+
+    background-image: radial-gradient(circle at 3px 3px, #222 0%, transparent 150%);
+    background-size: 6px 6px;
 }
 
 video#hero-vid {
@@ -18,10 +49,8 @@ video#hero-vid {
 }
 
 div#nav {
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
 
     position: absolute;
     top: 0;
@@ -29,9 +58,6 @@ div#nav {
 
     height: 2em;
     width: 100%;
-
-    color: white;
-    font-family: 'Source Code Pro', monospace;
 }
 
 div#nav-language {
@@ -42,47 +68,20 @@ span.lang-button:hover {
     cursor: pointer;
 }
 
-div#app.en .lang-button .en {
+div#app.en .lang-button .fr, div#app.fr .lang-button .en {
     text-decoration: underline;
 }
 
-div#app.fr .lang-button .fr {
-    text-decoration: underline
-}
-
-div#hero {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 66vh;
-
-    background-image: radial-gradient(circle at 3px 3px, #222 0%, transparent 150%);
-    background-size: 6px 6px;
-}
-
 div#contact {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
     position: absolute;
     bottom: 1em;
     left: 0;
 
     height: 2em;
     width: 100%;
-
-    color: white;
-    font-family: 'Source Code Pro', monospace;
 }
 
 div#contact a {
-    /* text-decoration: none; */
     color: white;
 }
 
@@ -101,6 +100,7 @@ span#subtitle {
     font-weight: 300;
 }
 
+/************************************ Main ************************************/
 div#main {
     padding-top: 2em;
     padding-bottom: 2em;
@@ -113,9 +113,8 @@ div.content {
 }
 
 div.cv-item, div.cv-item-header {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 div.cv-section-title {
@@ -140,6 +139,10 @@ div.cv-item-date > div {
     margin-bottom: 0.25em;
 }
 
+span.cv-item-date-title {
+    font-style: italic;
+}
+
 div.cv-item-header span {
     font-weight: 600;
 }
@@ -147,10 +150,6 @@ div.cv-item-header span {
 div.cv-item-header a {
     text-decoration: none;
     color: black;
-}
-
-span.cv-item-date-title {
-    font-style: italic;
 }
 
 div.cv-item-body ul {
@@ -163,13 +162,7 @@ div.cv-item-body li {
     margin-bottom: 0.25em;
 }
 
-span.cv-item-tool {
-    font-family: 'Source Code Pro', monospace;
-}
-
 span.cv-item-tool:not(:last-child)::after {
-    font-family: 'Source Code Pro', monospace;
     content: " / ";
-    padding-left: 0.25em;
-    padding-right: 0.25em;
+    padding: 0 0.25em;
 }

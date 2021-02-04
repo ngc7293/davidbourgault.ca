@@ -51,7 +51,7 @@ var locale = {
                             { fr: 'Contribuer au kernel Micrium', en: 'Contribute to the Micrium real-time kernel'},
                             { fr: 'Développer une infrastructure de profilage automatisée', en: 'Develop an automated profiling infrastructure'},
                             { fr: 'Intégrer l\'infrastructure de profilage à Jenkins CI', en: 'Integrate profiling intrastructure with Jenkins CI'},
-                            { fr: 'Déboguer le code applicatif et système embarqué', en: 'Debug embedded application and OS code'},
+                            { fr: 'Déboguer le code applicatif et le système embarqué', en: 'Debug embedded application and OS code'},
                             { fr: 'Créer des scripts de réusinage de code source', en: 'Create source code refactoring scripts'}
                         ],
                         tools: ['C', 'Python', 'RTOS', 'Jenkins', 'SCRUM']
@@ -77,9 +77,9 @@ var locale = {
                         tasks: [
                             { fr: 'Contribuer au SIGB open-source Koha', en: 'Contribute to the Koha open-source ILS'},
                             { fr: 'Programmer des scripts d\'automatisation en Bash et en Python', en: 'Develop automation scripts in Bash and Python'},
-                            { fr: 'Configuer et gérer des serveurs Debian', en: 'Configure and maintain Linux/Debian servers'},
+                            { fr: 'Configurer et gérer des serveurs Debian', en: 'Configure and maintain Linux/Debian servers'},
                         ],
-                        tools: ['Perl', 'Python', 'MySQL', 'Linux', 'Bash', 'XML', 'HTML/CSS']
+                        tools: ['Perl', 'Python', 'MySQL', 'Linux', 'Bash', 'XML', 'HTML', 'CSS']
                     }
                 ]
             },
