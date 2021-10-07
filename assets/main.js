@@ -1,6 +1,6 @@
 var locale = {
     hero: {
-        subtitle: { fr: 'Développeur', en: 'Developer' }
+        subtitle: { fr: 'Développeur, CPI', en: 'Developer, CPE' }
     },
     cv: {
         sections: [
@@ -9,6 +9,11 @@ var locale = {
                 items: [
                     {
                         dates: [
+                            {
+                                start: '2021/05',
+                                end: null,
+                                title: { fr: 'Temps plein', en: 'Full-time' }
+                            },
                             {
                                 start: '2020/01',
                                 end: '2020/08',
@@ -26,13 +31,12 @@ var locale = {
                             link: { fr: 'https://broadsign.com/fr', en:'https://broadsign.com' }
                         },
                         tasks: [
-                            { fr: 'Contribuer à un serveur web haute-performance', en: 'Contribute to a high-performance web server in C++'},
+                            { fr: 'Contribuer à une solution orientée micro-services', en: 'Contribute to a micro-service oriented solution'},
                             { fr: 'Concevoir de nouvelles architectures et composantes', en: 'Design new software components and architectures'},
                             { fr: 'Développer des applications de bureau avec Qt', en: 'Develop Qt-based desktop applications'},
-                            { fr: 'Contribuer à une infrastructure de tests automatisés', en: 'Contribute to an automated testing framework'},
-                            { fr: 'Investiger et corriger les bogues', en: 'Investigate and resolve bugs and client issues'}
+                            { fr: 'Contribuer à une infrastructure de tests automatisés', en: 'Contribute to an automated testing framework'}
                         ],
-                        tools: ['C++', 'Qt', 'CMake', 'Google Test', 'AWS', 'Python', 'PostgreSQL']
+                        tools: ['C++', 'Qt', 'CMake', 'AWS', 'Python', 'PostgreSQL', 'Kubernetes']
                     },
                     {
                         dates: [
@@ -145,7 +149,7 @@ var locale = {
                         dates: [
                             {
                                 start: '2017/05',
-                                end: '2020/12',
+                                end: null,
                                 title: { fr: 'Développeur', en: 'Developer' }
                             },
                             {
@@ -181,6 +185,9 @@ var locale = {
             text: { fr: 'Téléchargez mon CV complet en PDF', en: 'Download my full CV in PDF'},
             link: { fr: 'assets/media/davidbourgault.fr.pdf', en: 'assets/media/davidbourgault.en.pdf' }
         }
+    },
+    loc: {
+        present: { fr: 'présent', en: 'present' }
     }
 }
 

@@ -136,7 +136,11 @@ div.cv-item-info {
 }
 
 div.cv-item-date > div {
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+div.cv-item-date > div:not(:first-child) {
+    color: #888;
 }
 
 span.cv-item-date-title {

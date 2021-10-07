@@ -2,7 +2,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>David Bourgault</title>
-		<link rel="stylesheet" href="assets/main.min.css">
+		<link rel="stylesheet" href="assets/main.css">
 	</head>
 
 	<body>
@@ -37,7 +37,7 @@
 						<div v-for="item in section.items" class="cv-item flex">
 							<div class="cv-item-date">
 								<div v-for="date in item.dates">
-									<span class="cv-item-date-range">{{ date.start }} - {{ date.end }}<br /></span>
+									<span class="cv-item-date-range">{{ date.start }} - {{ date.end ? date.end : loc.loc.present[lang] }}<br /></span>
 									<span v-if="date.title[lang]" class="cv-item-date-title">{{ date.title[lang] }}<br /></span>
 								</div>
 							</div>
@@ -68,6 +68,6 @@
 	</body>
 	
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-	<script src="assets/main.min.js"></script>
+	<script src="assets/main.js"></script>
 	<script>console.log(locale)</script>
 </html>

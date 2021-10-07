@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "minify": "npm run minify:css && npm run minify:js",
+    "minify:js": "minify assets/main.js > assets/main.min.js",
+    "minify:css": "minify assets/main.css > assets/main.min.css"
+  },
+  "devDependencies": {
+    "minify": "^8.0.2"
+  }
+}
