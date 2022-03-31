@@ -34,7 +34,8 @@ var locale = {
                             { fr: 'Contribuer à une solution orientée micro-services', en: 'Contribute to a micro-service oriented solution'},
                             { fr: 'Concevoir de nouvelles architectures et composantes', en: 'Design new software components and architectures'},
                             { fr: 'Développer des applications de bureau avec Qt', en: 'Develop Qt-based desktop applications'},
-                            { fr: 'Contribuer à une infrastructure de tests automatisés', en: 'Contribute to an automated testing framework'}
+                            { fr: 'Contribuer à une infrastructure de tests automatisés', en: 'Contribute to an automated testing framework'},
+                            { fr: 'Moderniser le code source et repayer la dette technique', en: 'Modernise legacy source code and repay tech debt' }
                         ],
                         tools: ['C++', 'Qt', 'CMake', 'AWS', 'Python', 'PostgreSQL', 'Kubernetes']
                     },
@@ -169,12 +170,11 @@ var locale = {
                             link: { fr: 'https://clubrockets.ca/', en:'https://clubrockets.ca/en' }
                         },
                         tasks: [
-                            { fr: 'Lancement de 5 fusées sondes à 3km et 9km', en: 'Launched 5 sounding rockets to 10k and 30k feet'},
+                            { fr: 'Lancement de 5 fusées sondes à 3000 et 9000m', en: 'Launched 5 sounding rockets to 10,000 and 30,000 feet'},
                             { fr: 'Gérer le projet de rearchitecture de l\'avionique 2019', en: 'Manage the 2019 avionics redesign project'},
                             { fr: 'Créer un logiciel de contrôle et d\'affichage de la télémétrie', en: 'Create a ground control station program (monitoring and control)'},
                             { fr: 'Programmer les systèmes embarqués', en: 'Develop real-time software for onboard systems'},
                             { fr: 'Créer les procédures pour le lancement et l\'assemblage', en: 'Create procedures for launch and assembly operations'},
-                            { fr: 'Assembler l\'avionique pour le lancement', en: 'Assemble avionics prior to launch'}
                         ],
                         tools: ['C', 'C++', 'FreeRTOS', 'STM32', 'Qt', 'SPI', 'I₂C', 'Altium']
                     },
@@ -186,8 +186,41 @@ var locale = {
             link: { fr: 'assets/media/davidbourgault.fr.pdf', en: 'assets/media/davidbourgault.en.pdf' }
         }
     },
+    technologies: {
+        title: { fr: 'Technologies', en: 'Technologies' },
+        categories: [
+            {
+                title: { fr: 'Langages', en: 'Languages' },
+                items: [ 'C++', 'C', 'Python', 'C#', 'Java', 'Perl', 'Rust', 'Javascript', 'Bash' ]
+            },
+            {
+                title: { fr: 'Plateformes', en: 'Platforms' },
+                items: [ 'Linux', 'Windows', 'Web', 'Android', 'FreeRTOS', 'STM32', 'ESP32' ]
+            },
+            {
+                title: { fr: 'Nuages', en: 'Clouds' },
+                items: [ 'AWS', 'Google Cloud', 'Kubernetes' ]
+            },
+            {
+                title: { fr: 'Cadriciels', en: 'Frameworks' },
+                items: [ 'Qt', 'gRPC', 'Docker', 'Flask', 'Vue.js' ]
+            },
+            {
+                title: { fr: 'Base de données', en: 'Databases' },
+                items: [ 'MySQL', 'PostgreSQL', 'MongoDB', 'InfluxDB' ]
+            },
+            {
+                title: { fr: 'Tests & CI', en: 'Testing & CI' },
+                items: [ 'GTest', 'Github CI', 'Pytest', 'Gitlab CI', 'Robot Framework', 'Jenkins' ]
+            },
+            {
+                title: { fr: 'Outils de CAD', en: 'Design tools' },
+                items: [ 'SolidWorks', 'Autodesk Fusion', 'Altium Designer', 'Adobe CC' ]
+            }
+        ]
+    },
     loc: {
-        present: { fr: 'présent', en: 'present' }
+        present: { fr: 'présent', en: 'present' },
     }
 }
 

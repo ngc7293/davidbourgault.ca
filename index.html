@@ -1,8 +1,17 @@
-<html ut>
+<html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>David Bourgault</title>
 		<link rel="stylesheet" href="assets/main.css">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-NH3PPPE1Z1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-NH3PPPE1Z1');
+		</script>
 	</head>
 
 	<body>
@@ -10,8 +19,8 @@
 			<source type="video/webm" src="assets/media/gits.webm" />
 		</video>
 		<div id="app" :class=lang>
-			<div id="hero" class="flex">
-				<div id="nav" class="flex mono">
+			<div id="hero" class="flex flex-center">
+				<div id="nav" class="flex flex-center mono">
 					<div id="nav-language">
 						<span class="lang-button"><span v-on:click="setlang('en')" class="en">English</span> / <span v-on:click="setlang('fr')" class="fr">Français</span></span>
 					</div>
@@ -20,7 +29,7 @@
 				<span id="title">David Bourgault</span>
 				<span id="subtitle">{{ loc.hero.subtitle[lang] }}</span>
 
-				<div id="contact" class="flex mono">
+				<div id="contact" class="flex flex-center mono">
 					<span>
 						<span><a href="mailto:contact@davidbourgault.ca">contact@davidbourgault.ca</a></span> / <span><a href="https://www.linkedin.com/in/davidbourgault/">linkedin.com/in/davidbourgault</a></span>
 					</span>
@@ -29,12 +38,28 @@
 
 			<div id="main">
 				<div id="cv" class="content">
+					<div class="cv-section cv-tech">
+						<div class="cv-section-title">
+							<span>{{ loc.technologies.title[lang] }}</span>	
+						</div>
+
+						<div class="flex-v">
+							<div v-for="category in loc.technologies.categories" class="cv-tech-category flex">
+								<div class="cv-tech-category-title">
+									<span>{{ category.title[lang] }}</span>
+								</div>
+								<div class="cv-tech-items">
+									<span v-for="item in category.items" class="cv-tech-item mono">{{ item }}</span>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div v-for="section in loc.cv.sections" class="cv-section">
 						<div class="cv-section-title">
 							<span>{{ section.title[lang] }}</span>
 						</div>
 
-						<div v-for="item in section.items" class="cv-item flex">
+						<div v-for="item in section.items" class="cv-item flex flex-center">
 							<div class="cv-item-date">
 								<div v-for="date in item.dates">
 									<span class="cv-item-date-range">{{ date.start }} - {{ date.end ? date.end : loc.loc.present[lang] }}<br /></span>
@@ -43,7 +68,7 @@
 							</div>
 
 							<div class="cv-item-info">
-								<div class="cv-item-header flex">
+								<div class="cv-item-header flex flex-center">
 									<span>{{ item.title[lang] }}</span>
 									<span><a :href="item.org.link[lang]">{{ item.org.name }}</a></span>
 								</div>
@@ -59,7 +84,7 @@
 						</div>
 					</div>
 					
-					<div class="cv-links flex mono">
+					<div class="cv-links flex flex-center mono">
 						<a :href="loc.cv.pdf.link[lang]">{{ loc.cv.pdf.text[lang] }}</a>
 					</div>
 				</div>

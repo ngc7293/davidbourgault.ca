@@ -16,6 +16,14 @@ body {
 div.flex {
     display: flex;
     flex-direction: row;
+}
+
+div.flex-v {
+    display: flex;
+    flex-direction: column;
+}
+
+div.flex-center {
     align-items: center;
     justify-content: center;
 }
@@ -166,11 +174,35 @@ div.cv-item-body li {
     margin-bottom: 0.25em;
 }
 
-span.cv-item-tool:not(:last-child)::after {
-    content: " / ";
-    padding: 0 0.25em;
+span.cv-item-tool:not(:last-child)::after,
+span.cv-tech-item:not(:last-child)::after {
+    display: inline-block;
+    content: "/";
+    text-align: center;
+    width: 1.5em;
+    color: #888;
 }
 
 div.cv-links a {
     color: black;
+}
+
+div.cv-tech {
+    margin-bottom: 2em;
+}
+
+div.cv-tech-category {
+    margin-bottom: 0.5em;
+}
+
+div.cv-tech-category-title {
+    width: 20%;
+}
+
+div.cv-tech-items {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
 }
