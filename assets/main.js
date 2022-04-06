@@ -178,6 +178,26 @@ var locale = {
                         ],
                         tools: ['C', 'C++', 'FreeRTOS', 'STM32', 'Qt', 'SPI', 'I₂C', 'Altium']
                     },
+                    {
+                        dates: [
+                            {
+                                start: '2021/01',
+                                end: '2021/04',
+                                title: { fr: 'Développeur', en: 'Developer' }
+                            }
+                        ],
+                        title: { fr: 'Ganymède (Project de fin d\'études)', en: 'Ganymede (Capstone project)' },
+                        org: {
+                            name: 'École de Technologie Supérieure',
+                            link: { fr: 'https://github.com/ngc7293/ganymede/', en:'https://github.com/ngc7293/ganymede/' }
+                        },
+                        tasks: [
+                            { fr: 'Concevoir une plateforme SaaS pour l\'hydroponie automatisée', en: 'Design a Software as a Service platform for automated hydroponics' },
+                            { fr: 'Concevoir une architecture cloud-native en microservice', en: 'Design a cloud-native microservice architecture' },
+                            { fr: 'Implémenter la communication gRPC pour une platforme embarquée', en: 'Implement gRPC communication on an embedded device (ESP32)' }
+                        ],
+                        tools: ['C++', 'gRPC', 'MongoDB', 'InfluxDB', 'Google Cloud']
+                    }
                 ]
             }
         ],
