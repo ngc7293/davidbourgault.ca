@@ -60,7 +60,7 @@ div#nav {
     flex-direction: row;
     justify-content: flex-end;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -74,6 +74,10 @@ div#nav-language {
 
 span.lang-button:hover {
     cursor: pointer;
+}
+
+span.lang-button span {
+    mix-blend-mode: difference;
 }
 
 div#app.en .lang-button .fr, div#app.fr .lang-button .en {

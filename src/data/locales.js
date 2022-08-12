@@ -1,4 +1,4 @@
-var locale = {
+export default {
     hero: {
         subtitle: { fr: 'Développeur, CPI', en: 'Developer, CPE' }
     },
@@ -243,20 +243,3 @@ var locale = {
         present: { fr: 'présent', en: 'present' },
     }
 }
-
-var app = new Vue({
-    el: '#app',
-    data: {
-        lang: 'fr',
-        loc: locale
-    },
-    methods: {
-        setlang: function(lang) {
-            if (['fr', 'en'].includes(lang)) {
-                this.lang = lang;
-            } else {
-                this.lang = 'fr';
-            }
-        },
-    }
-})

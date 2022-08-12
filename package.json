@@ -1,10 +1,15 @@
 {
+  "type": "module",
   "scripts": {
-    "minify": "npm run minify:css && npm run minify:js",
-    "minify:js": "minify assets/main.js > assets/main.min.js",
-    "minify:css": "minify assets/main.css > assets/main.min.css"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
   },
   "devDependencies": {
-    "minify": "^8.0.2"
+    "@vitejs/plugin-vue": "^3.0.0",
+    "vite": "^3.0.0"
   }
 }
