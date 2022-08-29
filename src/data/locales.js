@@ -25,7 +25,7 @@ export default {
                                 title: { fr: 'Stage', en: 'Internship' }
                             }
                         ],
-                        title: { fr: 'Développeur logiciel', en: 'Software developer' },
+                        title: { fr: 'Développeur logiciel II', en: 'Software developer II' },
                         org: {
                             name: 'Broadsign International LLC',
                             link: { fr: 'https://broadsign.com/fr', en:'https://broadsign.com' }
@@ -215,11 +215,11 @@ export default {
             },
             {
                 title: { fr: 'Plateformes', en: 'Platforms' },
-                items: [ 'Linux', 'Windows', 'Web', 'Android', 'FreeRTOS', 'STM32', 'ESP32' ]
+                items: [ 'Linux', 'Windows', 'Web', 'FreeRTOS', 'STM32', 'ESP32', 'Android' ]
             },
             {
                 title: { fr: 'Nuages', en: 'Clouds' },
-                items: [ 'AWS', 'Google Cloud', 'Kubernetes' ]
+                items: [ 'AWS', 'Google Cloud', 'Kubernetes', 'Helm' ]
             },
             {
                 title: { fr: 'Cadriciels', en: 'Frameworks' },
