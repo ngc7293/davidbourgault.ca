@@ -50,7 +50,7 @@
         </div>
 
         <div class="cv-links flex flex-center mono">
-            <a :href="loc.cv.pdf.link[lang]">{{ loc.cv.pdf.text[lang] }}</a>
+            <a :href="loc.cv.pdf.link[lang]" download>{{ loc.cv.pdf.text[lang] }}</a>
         </div>
     </div>
 </template>

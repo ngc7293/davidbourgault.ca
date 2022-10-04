@@ -203,7 +203,7 @@ export default {
         ],
         pdf: {
             text: { fr: 'Téléchargez mon CV complet en PDF', en: 'Download my full CV in PDF'},
-            link: { fr: 'assets/media/davidbourgault.fr.pdf', en: 'assets/media/davidbourgault.en.pdf' }
+            link: { fr: '/davidbourgault.fr.pdf', en: '/davidbourgault.en.pdf' }
         }
     },
     technologies: {
@@ -230,8 +230,12 @@ export default {
                 items: [ 'MySQL', 'PostgreSQL', 'MongoDB', 'InfluxDB' ]
             },
             {
-                title: { fr: 'Tests & CI', en: 'Testing & CI' },
-                items: [ 'GTest', 'Github CI', 'Pytest', 'Gitlab CI', 'Robot Framework', 'Jenkins' ]
+                title: { fr: 'CI', en: 'CI' },
+                items: [ 'Github CI', 'Gitlab CI', 'Circle CI', 'Jenkins' ]
+            },
+            {
+                title: { fr: 'Tests', en: 'Testing' },
+                items: [ 'Google Test', 'Pytest', 'Robot Framework' ]
             },
             {
                 title: { fr: 'Outils de CAD', en: 'Design tools' },
