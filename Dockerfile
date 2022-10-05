@@ -1,6 +1,7 @@
 FROM blang/latex:latest AS build-cv
 
-COPY /src/cv    /data/
+WORKDIR         /data
+COPY /src/cv    /data
 RUN pdflatex davidbourgault.en
 RUN pdflatex davidbourgault.fr
 
@@ -10,9 +11,8 @@ WORKDIR             /workspace
 COPY package.json   /workspace/package.json
 RUN npm install
 
-COPY public         /workspace/public
-COPY --from=build-cv /data/davidbourgault.en.pdf /workspace/public/davidbourgault.en.pdf
-COPY --from=build-cv /data/davidbourgault.fr.pdf /workspace/public/davidbourgault.fr.pdf
+COPY public          /workspace/public
+COPY --from=build-cv /data/*.pdf  /workspace/public/
 
 COPY vite.config.js /workspace/vite.config.js
 COPY src            /workspace/src
