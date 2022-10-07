@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: davidbourgault-ca
-        image: gcr.io/davidbourgault-ca/website:latest
+        image: ghcr.io/ngc7293/davidbourgault.ca:latest
         ports:
           - containerPort: 80
         resources:
