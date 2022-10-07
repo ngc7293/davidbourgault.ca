@@ -1,7 +1,10 @@
 FROM blang/latex:latest AS cv
 
-WORKDIR         /data
-COPY /src/cv    /data
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt-get update && apt-get install -y texlive-full
+
+WORKDIR         /cv
+COPY /src/cv    /cv
 RUN pdflatex davidbourgault.en
 RUN pdflatex davidbourgault.fr
 
@@ -11,7 +14,7 @@ WORKDIR             /workspace
 COPY package.json   /workspace/package.json
 RUN npm install
 
-COPY --from=cv /data/*.pdf  /workspace/public/
+COPY --from=cv /cv/*.pdf  /workspace/public/
 
 COPY public         /workspace/public
 COPY vite.config.js /workspace/vite.config.js
