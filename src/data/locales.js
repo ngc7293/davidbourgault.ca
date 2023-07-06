@@ -10,18 +10,33 @@ export default {
                     {
                         dates: [
                             {
-                                start: '2021/05',
+                                start: '2023/02',
                                 end: null,
+                                title: { fr: 'Temps plein', en: 'Full-time' }
+                            }
+                        ],
+                        title: { fr: 'Développeur Back-End', en: 'Back-End developer' },
+                        org: {
+                            name: 'GHGSat Inc',
+                            link: { fr: 'https://www.ghgsat.com/fr/', en: 'https://www.ghgsat.com/en/' }
+                        },
+                        tasks: [
+                            { fr: 'Contribuer à un service web en Python 3 basé sur Django', en: 'Contribute to a Python web backend using Django'},
+                            { fr: 'Implémenter une interface web en Typescript avec React', en: 'Maintain Extract-Transform-Load scripts for georeferenced data'},
+                            { fr: 'Maintenir des scripts "Extract-Transform-Load" pour données géoréférencées', en: 'Implement features for a web frontend using Typescript and React'}
+                        ],
+                        tools: ['Python 3', 'Django', 'Argo', 'React', 'Typescript']
+                    },
+                    {
+                        dates: [
+                            {
+                                start: '2021/05',
+                                end: '2023/02',
                                 title: { fr: 'Temps plein', en: 'Full-time' }
                             },
                             {
-                                start: '2020/01',
-                                end: '2020/08',
-                                title: { fr: 'Temps partiel', en: 'Part-time' }
-                            },
-                            {
                                 start: '2019/09',
-                                end: '2019/12',
+                                end: '2020/08',
                                 title: { fr: 'Stage', en: 'Internship' }
                             }
                         ],
@@ -211,7 +226,7 @@ export default {
         categories: [
             {
                 title: { fr: 'Langages', en: 'Languages' },
-                items: [ 'C++', 'C', 'Python', 'C#', 'Java', 'Perl', 'Rust', 'Javascript', 'Bash' ]
+                items: [ 'C++', 'C', 'Python', 'Rust', 'C#', 'Java', 'Typescript', 'Bash' ]
             },
             {
                 title: { fr: 'Plateformes', en: 'Platforms' },
@@ -223,7 +238,7 @@ export default {
             },
             {
                 title: { fr: 'Cadriciels', en: 'Frameworks' },
-                items: [ 'Qt', 'gRPC', 'Docker', 'Flask', 'Vue.js' ]
+                items: [ 'Qt', 'gRPC', 'Docker', 'Flask', 'React', 'Vue.js' ]
             },
             {
                 title: { fr: 'Base de données', en: 'Databases' },
