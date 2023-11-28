@@ -10,8 +10,25 @@ export default {
                     {
                         dates: [
                             {
-                                start: '2023/02',
+                                start: '2024/08',
                                 end: null,
+                                title: { fr: 'Temps plein', en: 'Full-time' }
+                            }
+                        ],
+                        title: { fr: 'Développeur routage & compression', en: 'Routing & compression developer' },
+                        org: {
+                            name: 'Transit Inc',
+                            link: { fr: 'https://transitapp.com/?lang=fr', en: 'https://transitapp.com/?lang=en' }
+                        },
+                        tasks: [
+                        ],
+                        tools: ['C++', 'CMake', 'GitHub CI', 'Python 3']
+                    },
+                    {
+                        dates: [
+                            {
+                                start: '2023/02',
+                                end: '2024/03',
                                 title: { fr: 'Temps plein', en: 'Full-time' }
                             }
                         ],

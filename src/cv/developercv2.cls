@@ -1,18 +1,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Developer CV
 % LaTeX Class
-% Version 1.0 (28/1/19)
+% Version 2.0 (2024-02-11)
 %
 % This class originates from:
 % http://www.LaTeXTemplates.com
 %
 % Authors:
 % Jan Vorisek (jan@vorisek.me)
+% With modifications by David Bourgault (contact@davidbourgault.ca)
 % Based on a template by Jan Küster (info@jankuester.com)
 % Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
 %
 % License:
-% The MIT License (see included LICENSE file)
+% The MIT License
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -21,7 +22,7 @@
 %----------------------------------------------------------------------------------------
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{developercv}[2019/01/28 Developer CV class v1.0]
+\ProvidesClass{developercv2}[2019/01/28 Developer CV class v2.0]
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{extarticle}} % Pass through any options to the base class
 \ProcessOptions\relax % Process given options
@@ -71,11 +72,6 @@
 
 \usepackage[default]{raleway}
 \usepackage[default]{sourcecodepro}
-%\usepackage[defaultsans]{droidsans}
-%\usepackage{cmbright}
-%\usepackage{fetamont}
-%\usepackage[default]{gillius}
-%\usepackage{roboto}
 
 \renewcommand*\familydefault{\sfdefault} % Force the sans-serif version of any font used
 
@@ -203,14 +199,15 @@
 }
 
 \newcommand{\entry}[4]{% First argument for the leftmost date(s) text, second is for the bold entry heading, third is for the bold right-aligned entry qualifier and the fourth is for the entry description
-	\parbox[t]{0.25\textwidth}{% 17.5% of the text width of the page
+	\parbox[t]{0.2\textwidth}{% 17.5% of the text width of the page
 		#1 % Leftmost entry date(s) text
 	}%
-	&\parbox[t]{0.75\textwidth}{% 82.5% of the text width of the page
+	&\parbox[t]{0.80\textwidth}{% 82.5% of the text width of the page
 		\textbf{#2}% Entry heading text
 		\hfill% Horizontal whitespace
 		{\footnotesize \textbf{\textcolor{black}{#3}}}\\% Right-aligned entry qualifier text
 		#4 % Entry description text
+		\hfill% Horizontal whitespace
 	}\\\\}
 
 % Command to output a separator slash between lists, e.g. '  /  '

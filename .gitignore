@@ -1,4 +1,17 @@
+# IDE
+.vscode/
+
+# Node artifacts
+.venv/
 node_modules/
 dist/
-.vscode/
 package-lock.json
+
+# Latex artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.pdf
+*.synctex.gz
+*.out

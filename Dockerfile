@@ -1,6 +1,6 @@
 FROM blang/latex:latest AS cv
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y texlive-full
 
 WORKDIR         /cv

@@ -2,7 +2,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\documentclass[9pt]{developercv2} % Default font size, values from 8-12pt are recommended
 
 %----------------------------------------------------------------------------------------
 
@@ -14,12 +14,8 @@
 
 \begin{minipage}[t]{0.45\textwidth}
 	\vspace{-\baselineskip}
-
 	\name{David}{Bourgault}
 
-	\vspace{4pt}
-
-	{\huge Developer / B. Eng. / CPE}
 \end{minipage}
 \begin{minipage}[t]{0.55\textwidth}
 	\begin{minipage}[t]{0.5\textwidth}
@@ -27,246 +23,199 @@
 		\icon{MapMarker}{12}{Montréal}\\
 		\icon{Phone}{12}{+1 418 208 9749}\\
 		\icon{At}{12}{\href{mailto:contact@davidbourgault.ca}{contact@davidbourgault.ca}}\\
-		\icon{Globe}{12}{\href{https://davidbourgault.ca}{davidbourgault.ca}}
 	\end{minipage}
 	\begin{minipage}[t]{0.5\textwidth}
 		\vspace{-\baselineskip}
 		\icon{Github}{12}{\href{https://github.com/ngc7293}{github.com/ngc7293}}\\
 		\icon{Linkedin}{12}{\href{https://www.linkedin.com/in/davidbourgault/}{davidbourgault}}\\
-		\icon{At}{12}{\href{mailto:david.bourgault.1@ens.etsmtl.ca}{david.bourgault.1@ens.etsmtl.ca}}\\
+		\icon{Globe}{12}{\href{https://davidbourgault.ca}{davidbourgault.ca}}
 	\end{minipage}
 \end{minipage}
 
-\vspace{0.4cm}
+\cvsect{Summary}
 
-%----------------------------------------------------------------------------------------
-%	EXPERIENCE
-%----------------------------------------------------------------------------------------
+	Passionnate Software Developer with over three years of professional experience
+	with various technologies. I have worked with various technologies but am most proefficient with C++, C and Python,
+	and am looking for opportunities to work with system-level software.
 
-\begin{minipage}[t]{0.8\textwidth}
 \cvsect{Experience}
-
 \begin{entrylist}
 	\entry
-		{2023/02 -- now\\{\small\emph{Full-time}}}
-		{Full-Stack Developer}
-		{\href{https://ghgsat.com/en/}{GHGSat Inc}}
-		{
-			\vspace{-14pt}
-			\begin{itemize}
-				\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
-				\setlength\itemsep{-1pt}
-				\item Contribute to a Python web backend using Django
-				\item Maintain data import scripts for georeferenced data
-				\item Implement features for a web frontend using Typescript and React
-			\end{itemize}
-			\vspace{-4pt}
-			\texttt{Python 3}\slashsep\texttt{Django}\slashsep\texttt{Argo}\slashsep\texttt{React}\slashsep\texttt{Typescript}
+	{2023/02 -- now}
+	{Backend Developer}
+	{\href{https://ghgsat.com/en/}{GHGSat Inc}}
+	{
+		\emph{
+			GHGSat monitors greenhouse gas emissions for industry and public
+			sector actors using an array of satellite and air-born sensors,
+			which clients can access through the Spectra website.
 		}
+
+		\begin{itemize}
+			\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
+			\setlength\itemsep{-1pt}
+			\item Contributed to a Python web backend using Django
+			\item Developed pipelines to extract, transform and load georeferenced data
+			\item Championed rigorous coding and testing practices within the team
+		\end{itemize}
+
+		\textbf{Technologies}: AWS, GraphQL, Python, Typescript, Kubernetes, PostGIS
+	}
 	\entry
-		{2021/05 -- 2023/02\\{\small\emph{Full-time}}\\2020/08 -- 2019/12\\{\small\emph{Internship}}}
-		{Software developer II}
-		{\href{https://broadsign.com/}{Broadsign International LLC}}
-		{
-			\vspace{-14pt}
-			\begin{itemize}
-				\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
-				\setlength\itemsep{-1pt}
-				\item Contribute to a micro-service oriented solution
-				\item Design and document new software systems
-				\item Contribute to an automated testing framework
-				\item Modernise legacy code and repay technical debt
-			\end{itemize}
-			\vspace{-4pt}
-			\texttt{C++}\slashsep\texttt{Qt}\slashsep\texttt{CMake}\slashsep\texttt{AWS}\slashsep\texttt{PostgreSQL}\slashsep\texttt{Kubernetes}
+	{2021/05 -- 2023/02}
+	{Software developer II}
+	{\href{https://broadsign.com/}{Broadsign International LLC}}
+	{
+		\emph{
+			Broadsign's Control product offers an advanced SaaS platform for
+			Digital Out-of-Home advertising, including network and content
+			management, as well as rule-based playlist generation.
 		}
+
+		\begin{itemize}
+			\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
+			\setlength\itemsep{-1pt}
+			\item Contributed to an automated testing framework
+			\item Worked on server and desktop applications in C++
+			\item Designed, documented and deployed new software systems
+			\item Helped build and package software for Windows and Linux
+			\item Contributed to the modernization of the company's source
+		\end{itemize}
+
+		\textbf{Technologies}: C++, REST APIs, GRPC, Kubernetes, Microservices, Python, PostgreSQL
+	}
 	\entry
-		{2018/09 -- 2018/12\\{\small\emph{Internship}}}
-		{Embedded \& test developer}
-		{\href{https://www.silabs.com/}{Silicon Laboratories Inc.}}
-		{
-			\vspace{-14pt}
-			\begin{itemize}
-				\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
-				\setlength\itemsep{-1pt}
-				\item Contribute to the \emph{Micrium} real-time kernel
-				\item Develop an automated profiling infrastructure
-				\item Debug embedded application and OS code
-			\end{itemize}
-			\vspace{-4pt}
-			\texttt{C}\slashsep\texttt{Python}\slashsep\texttt{RTOS}\slashsep\texttt{Jenkins}\slashsep\texttt{Robot Framework}
+	{2019/09 -- 2020/08\\{\small\emph{Internship}}}
+	{Software developer}
+	{\href{https://broadsign.com/}{Broadsign International LLC}}
+	{
+		\emph{
+			Broadsign's Control product offers an advanced SaaS platform for
+			Digital Out-of-Home advertising, including network and content
+			management, as well as rule-based playlist generation.
 		}
+
+		\begin{itemize}
+			\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
+			\setlength\itemsep{-1pt}
+			\item Contributed to an automated testing framework
+			\item Worked on server and desktop applications in C++
+			\item Contributed bug fixes and feature improvements
+		\end{itemize}
+
+		\textbf{Technologies}: C++, REST APIs, GRPC, Kubernetes, Microservices, Python, PostgreSQL
+	}
 	\entry
-		{2018/01 -- 2018/07\\{\small\emph{Part-time}}\\2017/09 -- 2017/12\\{\small\emph{Internship}}}
-		{Full stack web developer}
-		{\href{https://inlibro.com/en/}{Solutions inLibro Inc.}}
-		{
-			\vspace{-14pt}
-			\begin{itemize}
-				\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
-				\setlength\itemsep{-1pt}
-				\item Contribute to the \emph{Koha} open-source ILS
-				\item Develop automation scripts in Bash and Python
-				\item Configure and maintain Linux/Debian servers
-			\end{itemize}
-			\vspace{-4pt}
-			\texttt{Perl}\slashsep\texttt{Python}\slashsep\texttt{MySQL}\slashsep\texttt{Linux}\slashsep\texttt{Bash}\slashsep\texttt{XML}
+	{2018/09 -- 2018/12\\{\small\emph{Internship}}}
+	{Embedded \& test developer}
+	{\href{https://www.silabs.com/}{Silicon Laboratories Inc.}}
+	{
+		\emph{
+			Silicon Labs develops efficient microcontrollers and SoCs for
+			connected applications, and the software tools to use them.
 		}
+
+		\begin{itemize}
+			\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
+			\setlength\itemsep{-1pt}
+			\item Contributed bug fixes and feature improvements to the \emph{Micrium} real-time kernel
+			\item Expanded an automated profiling infrastructure in Python
+			\item Debugged embedded application and operating code in C
+		\end{itemize}
+	
+		\textbf{Technologies}: Embedded C, RTOS (Micrium), Python, Robot framework
+	}
+	\entry
+	{2017/09 -- 2018/07\\{\small\emph{Internship}}}
+	{Full stack web developer}
+	{\href{https://inlibro.com/en/}{Solutions inLibro Inc.}}
+	{
+		\emph{
+			inLibro offers hosting and development services centered around the
+			Koha open-source library management system.
+		}
+
+		\begin{itemize}
+			\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
+			\setlength\itemsep{-1pt}
+			\item Contribute to the \emph{Koha} open-source ILS
+			\item Develop automation scripts in Bash and Python
+			\item Configure and maintain Linux/Debian servers
+		\end{itemize}
+	
+		\textbf{Technologies}: Perl, Python, MySQL, Debian
+	}
 \end{entrylist}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-
 \cvsect{Education}
-
 \begin{entrylist}
 	\setlength\itemsep{-1pt}
 	\entry
-		{2017/05 -- 2021/04}
-		{Bachelor of Software Engineering}
-		{\href{https://etsmtl.ca}{École de Technologie Supérieure}}
-		{
-			\vspace{-14pt}
-			\begin{itemize}
-				\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
-				\setlength\itemsep{-1pt}
-				\item Génie+ designation for involvement in student life
-			\end{itemize}
-			\vspace{-8pt}
-		}
-	\entry
-		{2016/08 -- 2017/04}
-		{Technological Academic Path}
-		{\href{https://etsmtl.ca}{École de Technologie Supérieure}}
-		{\vspace{-14pt}}
-	\entry
-		{2013/08 -- 2015/12}
-		{College Diploma in Computer Science \& Mathematics}
-		{CÉGEP Limoilou}
-		{\vspace{-14pt}}
+	{2017/05 -- 2021/04}
+	{Bachelor of Software Engineering}
+	{\href{https://etsmtl.ca}{École de Technologie Supérieure}}
+	{
+		\vspace{-14pt}
+		\begin{itemize}
+			\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
+			\setlength\itemsep{-1pt}
+			\item Génie+ designation for involvement in student life
+			\item Specialization in embedded software
+		\end{itemize}
+	}
 \end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS
-%----------------------------------------------------------------------------------------
 
 \cvsect{Projects}
-
 \begin{entrylist}
 	\entry
-		{2017/05 -- now\\{\small\emph{Developer}}\\2019/07 -- 2020/01\\{\small\emph{Project Manager}}\\2018/07 -- 2019/07\\{\small\emph{Avionics Director}}}
-		{\href{https://clubrockets.ca/en/}{RockÉTS -- High Powered Rockets}}
-		{\href{https://clubrockets.ca/en/}{École de Technologie Supérieure}}
-		{
-			\vspace{-14pt}
-			\begin{itemize}
-				\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
-				\setlength\itemsep{-1pt}
-				\item Launched 5 sounding rockets to 10,000 and 30,000 feet
-				\item Manage the 2019 avionics redesign project
-				\item Develop real-time software for onboard systems with telemetry
-			\end{itemize}
-			\vspace{-4pt}
-			\texttt{C}\slashsep\texttt{C++}\slashsep\texttt{FreeRTOS}\slashsep\texttt{STM32}\slashsep\texttt{Qt}\slashsep\texttt{Altium Designer}
-		}
+	{2017/05 -- 2021/05\\{\small\emph{Developer}}}
+	{\href{https://clubrockets.ca/en/}{RockÉTS -- University Rocketry Club}}
+	{\href{https://clubrockets.ca/en/}{École de Technologie Supérieure}}
+	{
+	\vspace{-14pt}
+	\begin{itemize}
+		\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
+		\setlength\itemsep{-1pt}
+		\item Launched 5 sounding rockets to 10,000 and 30,000 feet
+		\item Managed the 2019 avionics redesign project
+		\item Developed real-time software for onboard systems with telemetry in C and C++
+	\end{itemize}
+	}
 	\entry
-		{2021/01 -- 2021/04\\{\small\emph{Developer}}}
-		{\href{https://github.com/ngc7293/ganymede}{Ganymede (Capstone project)}}
-		{École de Technologie Supérieure}
-		{
-			\vspace{-14pt}
-			\begin{itemize}
-				\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
-				\setlength\itemsep{-1pt}
-				\item Design a Software as a Service platform for automated hydroponics
-				\item Design a cloud-native microservice architecture
-			\end{itemize}
-			\vspace{-4pt}
-			\texttt{C++}\slashsep\texttt{gRPC}\slashsep\texttt{MongoDB}\slashsep\texttt{InfluxDB}\slashsep\texttt{Google Cloud}
-		}
+	{2021/01 -- now\\{\small\emph{Developer}}}
+	{\href{https://github.com/ngc7293/ganymede}{Ganymede (Capstone project)}}
+	{École de Technologie Supérieure}
+	{
+	\vspace{-14pt}
+	\begin{itemize}
+		\renewcommand{\labelitemi}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}
+		\setlength\itemsep{-1pt}
+		\item Design a Software as a Service platform for automated hydroponics in C++ and in Rust
+		\item Implement GRPC/Protobuf communication on an embedded platform
+	\end{itemize}
+	\vspace{-12pt}
+	}
 \end{entrylist}
+\vspace{-\baselineskip}
 
-%----------------------------------------------------------------------------------------
-%	CERTIFICATIONS
-%----------------------------------------------------------------------------------------
+\cvsect{Skills}
+\begin{minipage}[t]{0.5\textwidth}
+	\textbf{Languages}: C++, C, Python, Typescript, Rust
+	
+	\textbf{Testing \& CI}: GTest, Pytest, Robot, Gitlab CI, Github Actions
 
-% \cvsect{Certifications}
-
-% 	\begin{entrylist}
-% 		\entry
-% 			{2017}
-% 			{Amateur Radio Operator}
-% 			{Innovation, Science and Economic Development Canada}
-% 			{
-% 				Basic with Honours Certification. (VA2HLX)
-% 			}
-% 	\end{entrylist}
+	\textbf{APIs}: REST, GraphQL, GRPC
 \end{minipage}
-\begin{minipage}[t]{0.02\textwidth}
-	\hfill
-\end{minipage}
-\begin{minipage}[t]{0.18\textwidth}
-	\cvsect{Languages}
-		\textbf{French} - native\\
-		\textbf{English} - bilingual\\
-		\textbf{German} - A2 proficiency
+\begin{minipage}[t]{0.5\textwidth}
+	\textbf{Environments}: Windows, Linux, Embedded (STM32, ESP32)
 
-	\cvsect{Technologies}
-		\textbf{Programming}\\
-		\begin{minipage}[t]{0.5\textwidth}
-			\texttt{C++}\\
-			\texttt{C}\\
-			\texttt{Python}\\
-			\texttt{C\#}
-		\end{minipage}
-		\begin{minipage}[t]{0.48\textwidth}
-			\texttt{Rust}\\
-			\texttt{Typescript}\\
-			\texttt{Java}\\
-			\texttt{Bash}
-		\end{minipage}
-		\\\\\\
-		\textbf{Environments}\\
-		\begin{minipage}[t]{0.5\textwidth}
-			\texttt{Linux}\\
-			\texttt{Windows}\\
-			\texttt{Web}
-		\end{minipage}
-		\begin{minipage}[t]{0.48\textwidth}
-			\texttt{Android}\\
-			\texttt{FreeRTOS}\\
-			\texttt{Embedded}
-		\end{minipage}
-		\\\\\\
-		\textbf{Frameworks}\\
-		\begin{minipage}[t]{0.5\textwidth}
-			\texttt{Qt}\\
-			\texttt{GTest}\\
-			\texttt{Flask}\\
-			\texttt{PyTest}
-		\end{minipage}
-		\begin{minipage}[t]{0.48\textwidth}
-			\texttt{gRPC}\\
-			\texttt{Docker}\\
-			\texttt{Kubernetes}\\
-			\texttt{React}
-		\end{minipage}
-		\\\\\\
-		\textbf{Design}\\
-		\texttt{Altium Designer}\\
-		\texttt{SOLIDWORKS}\\
-		\texttt{Fusion 360}\\
-		\texttt{Adobe CC}
-
-	\cvsect{Hobbies / Interests}
-		Space technologies\\
-		Transportation\\
-		Photography\\
-		History\\
-		Anthropology
+	\textbf{Databases}: Postgres, Redis, Mongo
+	
+	\textbf{Clouds}: AWS, Docker, Kubernetes
 \end{minipage}
 
-%----------------------------------------------------------------------------------------
+\cvsect{About Me}
+\textbf{Languages}: French (native), English (bilingual), German (A2 level)
 
+\textbf{Interests}: Photography, Aerospace technologies, Anthropology
 \end{document}
