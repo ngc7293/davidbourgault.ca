@@ -13,4 +13,5 @@ RUN hugo build --minify
 
 FROM nginx:alpine-slim AS runtime
 
+COPY              nginx.conf    /etc/nginx/conf.d/default.conf
 COPY --from=build /build/public /usr/share/nginx/html

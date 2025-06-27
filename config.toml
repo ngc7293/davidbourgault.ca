@@ -1,6 +1,7 @@
 baseURL = "/"
 title = "David Bourgault"
 disableKinds = ["sitemap", "taxonomy", "rss"]
+defaultContentLanguageInSubdir = true
 
 [languages]
   [languages.en]
