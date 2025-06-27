@@ -48,7 +48,6 @@ de HTML et JS pures _inlined_ dans le serveur.
 
 [Site web](https://davidbourgault.ca/qr/) / [Github](https://github.com/ngc7293/qqr)
 
-
 ### Mappe
 
 Un outil en ligne très simple, bâti pour m'aider à visualiser plusieurs ensembles
@@ -57,3 +56,7 @@ avec Svelte et Mapbox GL.
 
 [Site web](https://davidbourgault.ca/map/) / [Github](https://github.com/ngc7293/mappe)
  
+## Contact
+
+ - [contact@davidbourgault.ca](mailto:contact@davidbourgault.ca)
+ - [linkedin](https://linkedin.com/in/davidbourgault)

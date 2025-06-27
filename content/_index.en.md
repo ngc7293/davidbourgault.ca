@@ -42,14 +42,12 @@ inlined in the server.
 
 [Website](https://davidbourgault.ca/qr/) / [Github](https://github.com/ngc7293/qqr)
 
-
 ### Mappe
 
 A simple online tool, built to help me visualize multiple GeoJSON and encoded 
 polylines side-by-side. Built with Svelte and Mapbox GL.
 
 [Website](https://davidbourgault.ca/map/) / [Github](https://github.com/ngc7293/mappe)
-
 
 ## Contact
 
