@@ -1,28 +1,16 @@
-FROM blang/latex:latest AS cv
+FROM alpine:latest AS build
 
-ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get install -y texlive-full
+RUN apk add --update hugo
 
-WORKDIR         /cv
-COPY /src/cv    /cv
-RUN pdflatex davidbourgault.en
-RUN pdflatex davidbourgault.fr
+WORKDIR             /build
 
-FROM node:alpine AS build
+COPY config.toml /build/config.toml
+COPY assets      /build/assets
+COPY layouts     /build/layouts
+COPY content     /build/content
 
-WORKDIR             /workspace
-COPY package.json   /workspace/package.json
-RUN npm install
+RUN hugo build --minify
 
-COPY --from=cv /cv/*.pdf  /workspace/public/
+FROM nginx:alpine-slim AS runtime
 
-COPY public         /workspace/public
-COPY vite.config.js /workspace/vite.config.js
-COPY src            /workspace/src
-COPY index.html     /workspace/index.html
-
-RUN npm run build
-
-FROM nginx:alpine AS runtime
-
-COPY --from=build /workspace/dist /usr/share/nginx/html
+COPY --from=build /build/public /usr/share/nginx/html

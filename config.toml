@@ -1,0 +1,11 @@
+baseURL = "/"
+title = "David Bourgault"
+disableKinds = ["sitemap", "taxonomy", "rss"]
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+  [languages.fr]
+    languageName = "French"
+    weight = 2

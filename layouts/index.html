@@ -1,0 +1,13 @@
+
+{{ define "main" }}
+    <main>
+      <div id="lang-control">
+        {{ range .AllTranslations }}
+          <a href="{{ .RelPermalink }}" hreflang="{{ .Language.LanguageCode }}">{{ .Language.LanguageCode }}</a>
+        {{ end }}
+      </div>
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </main>
+{{ end }}

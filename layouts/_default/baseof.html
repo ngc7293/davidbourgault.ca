@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name=author content="{{ .Params.Author }}">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{ $styles := resources.Get "css/style.css" | minify }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+    {{ range resources.ByType "font" }}
+      <link rel="preload" href="{{ .RelPermalink }}" as="font" type="{{ .MediaType.Type }}" crossorigin>
+    {{ end }}
+  </head>
+  <body>
+    {{ block "main" . }}
+    {{ end }}
+    {{ block "footer" . }}
+    {{ end }}
+  </body>
+</html>

@@ -1,17 +1,6 @@
 # IDE
 .vscode/
 
-# Node artifacts
-.venv/
-node_modules/
-dist/
-package-lock.json
-
-# Latex artifacts
-*.aux
-*.fdb_latexmk
-*.fls
-*.log
-*.pdf
-*.synctex.gz
-*.out
+# Build artefacts
+public/
+.hugo_build.lock
