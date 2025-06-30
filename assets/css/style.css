@@ -2,10 +2,16 @@
     --markdown-blue: #6583e6;
 }
 
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('/fonts/cascadia-code.ttf') format('truetype');
+}
+
 body {
     margin: 0;
+    margin-bottom: 3em;
     padding: 0;
-
+    text-size-adjust: none;;
     background: white;
     color: black;
 }
@@ -34,7 +40,7 @@ h2::before {
 }
 
 h3::before {
-    content: '## ';
+    content: '### ';
     color: var(--markdown-blue);
 }
 
@@ -67,6 +73,7 @@ a::after {
 
 ul {
     list-style: none;
+    padding-left: 1em;
 }
 
 ul li::before {

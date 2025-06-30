@@ -1,8 +1,16 @@
++++
+title = "David Bourgault"
+author = "David Bourgault <contact@davidbourgault.ca>"
++++
+
 # David Bourgault
 
 Hi! I'm a software developer. By day I work on pathfinding and data
 compression at [Transit](https://transit.app), and by night I sometimes do other
 things.
+
+- [Projects](#projects)
+- [Contact](#contact)
 
 ## Projects
 
