@@ -5,7 +5,7 @@ author = "David Bourgault <contact@davidbourgault.ca>"
 
 # David Bourgault
 
-Salut! Je suis un développeur logiciel. De jours, je travaille sur des
+Salut! Je suis un développeur logiciel. De jour, je travaille sur des
 algorithmes de routage et de compression de données chez
 [Transit](https://transit.app/fr/). De nuit, je fais parfois d'autres choses.
 
